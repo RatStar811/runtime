@@ -22,3 +22,5 @@ extends:
           isRollingBuild: ${{ variables.isRollingBuild }}
           excludeNonLibTests: true
           excludeLibTests: false
+        env:
+          MSBUILDUSESERVER: 1

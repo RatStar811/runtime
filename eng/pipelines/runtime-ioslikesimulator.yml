@@ -19,3 +19,5 @@ extends:
           isExtraPlatformsBuild: ${{ variables.isExtraPlatformsBuild }}
           isiOSLikeSimulatorOnlyBuild: ${{ variables.isiOSLikeSimulatorOnlyBuild }}
           isRollingBuild: ${{ variables.isRollingBuild }}
+        env:
+          MSBUILDUSESERVER: 1

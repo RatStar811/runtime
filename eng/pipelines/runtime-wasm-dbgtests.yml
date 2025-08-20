@@ -22,3 +22,5 @@ extends:
           isWasmOnlyBuild: ${{ variables.isWasmOnlyBuild }}
           isRollingBuild: ${{ variables.isRollingBuild }}
           debuggerTestsOnly: true
+        env:
+          MSBUILDUSESERVER: 1

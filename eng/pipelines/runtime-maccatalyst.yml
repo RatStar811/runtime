@@ -18,3 +18,5 @@ extends:
           isExtraPlatformsBuild: ${{ variables.isExtraPlatformsBuild }}
           isMacCatalystOnlyBuild: ${{ variables.isMacCatalystOnlyBuild }}
           isRollingBuild: ${{ variables.isRollingBuild }}
+        env:
+          MSBUILDUSESERVER: 1

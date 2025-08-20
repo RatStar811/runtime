@@ -18,3 +18,5 @@ extends:
           isExtraPlatformsBuild: ${{ variables.isExtraPlatformsBuild }}
           isLinuxBionicOnlyBuild: ${{ variables.isLinuxBionicOnlyBuild }}
           isRollingBuild: ${{ variables.isRollingBuild }}
+        env:
+          MSBUILDUSESERVER: 1

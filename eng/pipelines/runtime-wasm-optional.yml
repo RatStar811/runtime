@@ -24,3 +24,5 @@ extends:
           excludeLibTests: true
           excludeNonLibTests: true
           excludeOptional: false
+        env:
+          MSBUILDUSESERVER: 1
