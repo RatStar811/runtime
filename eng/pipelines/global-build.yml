@@ -62,6 +62,7 @@ extends:
                 eq(variables['isRollingBuild'], true))
           env:
             MSBUILDUSESERVER: 1
+            DOTNET_CLI_USE_MSBUILD_SERVER: 1
 
       #
       # Build with RuntimeFlavor only. This exercise code paths where only RuntimeFlavor is

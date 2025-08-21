@@ -38,3 +38,4 @@ extends:
           isRollingBuild: ${{ variables.isRollingBuild }}
         env:
           MSBUILDUSESERVER: 1
+          DOTNET_CLI_USE_MSBUILD_SERVER: 1
