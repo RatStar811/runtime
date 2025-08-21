@@ -15,6 +15,7 @@ steps:
     displayName: ${{ parameters.displayName }}
     env:
       MSBUILDUSESERVER: '1'
+      DOTNET_CLI_USE_MSBUILD_SERVER: '1'
     ${{ if eq(parameters.useContinueOnErrorDuringBuild, true) }}:
       continueOnError: ${{ parameters.shouldContinueOnError }}
     ${{ if ne(parameters.container, '') }}:

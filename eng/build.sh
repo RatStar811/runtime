@@ -15,6 +15,7 @@ done
 scriptroot="$( cd -P "$( dirname "$source" )" && pwd )"
 
 export MSBUILDUSESERVER=1
+export DOTNET_CLI_USE_MSBUILD_SERVER=1
 
 usage()
 {

@@ -470,6 +470,8 @@ function MSBuild {
       Write-PipelineSetVariable -name "NUGET_PLUGIN_REQUEST_TIMEOUT_IN_SECONDS" -value "20"
       export MSBUILDUSESERVER=1
       Write-PipelineSetVariable -name "MSBUILDUSESERVER" -value "1"
+      export DOTNET_CLI_USE_MSBUILD_SERVER=1
+      Write-PipelineSetVariable -name "DOTNET_CLI_USE_MSBUILD_SERVER" -value "1"
     fi
 
     local toolset_dir="${_InitializeToolset%/*}"
